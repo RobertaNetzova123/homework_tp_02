@@ -1,0 +1,6 @@
+Rails.application.routes.draw do
+	get 'message/new'
+	resources :messages
+	root 'message#new'
+		
+end

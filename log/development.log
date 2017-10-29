@@ -1,0 +1,958 @@
+Started GET "/" for 127.0.0.1 at 2017-10-29 13:56:18 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/roberta/.rvm/gems/ruby-2.4.1/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/roberta/.rvm/gems/ruby-2.4.1/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (9.4ms)
+Completed 200 OK in 1170ms (Views: 62.5ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2017-10-29 13:56:25 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-10-29 13:56:43 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/roberta/.rvm/gems/ruby-2.4.1/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/roberta/.rvm/gems/ruby-2.4.1/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (44.4ms)
+Completed 200 OK in 64ms (Views: 60.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-29 13:59:53 -0700
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:4:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2017-10-29 14:00:12 -0700
+Processing by MessageController#new as HTML
+  Rendering message/new.html.erb within layouts/application
+  Rendered message/new.html.erb within layouts/application (1832.5ms)
+Completed 500 Internal Server Error in 1930ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `articles_path' for #<#<Class:0x007f5d5c78f030>:0x007f5d5c78d460>
+Did you mean?  asset_path):
+    1: <%= form_with scope: :article, url: articles_path, local: true do |form| %>
+    2:   <p>
+    3:     <%= form.label :title %><br>
+    4:     <%= form.text_field :title %>
+  
+app/views/message/new.html.erb:1:in `_app_views_message_new_html_erb___1862943134797034553_70019480058980'
+Started GET "/" for 127.0.0.1 at 2017-10-29 14:00:41 -0700
+Processing by MessageController#new as HTML
+  Rendering message/new.html.erb within layouts/application
+  Rendered message/new.html.erb within layouts/application (1013.7ms)
+Completed 500 Internal Server Error in 1043ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `articles_path' for #<#<Class:0x007f5d5c936eb0>:0x007f5d5c9352b8>
+Did you mean?  asset_path):
+    1: <%= form_with scope: :message, url: articles_path, local: true do |form| %>
+    2:   <p>
+    3:     <%= form.label :title %><br>
+    4:     <%= form.text_field :title %>
+  
+app/views/message/new.html.erb:1:in `_app_views_message_new_html_erb___1862943134797034553_70019480927140'
+Started GET "/" for 127.0.0.1 at 2017-10-29 14:00:47 -0700
+Processing by MessageController#new as HTML
+  Rendering message/new.html.erb within layouts/application
+  Rendered message/new.html.erb within layouts/application (953.2ms)
+Completed 500 Internal Server Error in 969ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `articles_path' for #<#<Class:0x007f5d5c936eb0>:0x007f5d5cb7a9d8>
+Did you mean?  asset_path):
+    1: <%= form_with scope: :message, url: articles_path, local: true do |form| %>
+    2:   <p>
+    3:     <%= form.label :title %><br>
+    4:     <%= form.text_field :title %>
+  
+app/views/message/new.html.erb:1:in `_app_views_message_new_html_erb___1862943134797034553_70019482114480'
+Started GET "/" for 127.0.0.1 at 2017-10-29 14:03:06 -0700
+Processing by MessageController#new as HTML
+  Rendering message/new.html.erb within layouts/application
+  Rendered message/new.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 41ms
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"message"}, missing required keys: [:id]):
+    1: <%= form_with scope: :message, url: message_path, local: true do |form| %>
+    2:   <p>
+    3:     <%= form.label :title %><br>
+    4:     <%= form.text_field :title %>
+  
+app/views/message/new.html.erb:1:in `_app_views_message_new_html_erb___1862943134797034553_70019443156360'
+Started GET "/" for 127.0.0.1 at 2017-10-29 14:04:43 -0700
+Processing by MessageController#new as HTML
+  Rendering message/new.html.erb within layouts/application
+  Rendered message/new.html.erb within layouts/application (846.0ms)
+Completed 500 Internal Server Error in 863ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `messages_path' for #<#<Class:0x007f5d5c936eb0>:0x007f5d58232eb0>
+Did you mean?  message_path
+               message_new_path):
+    1: <%= form_with scope: :message, url: messages_path, local: true do |form| %>
+    2:   <p>
+    3:     <%= form.label :title %><br>
+    4:     <%= form.text_field :title %>
+  
+app/views/message/new.html.erb:1:in `_app_views_message_new_html_erb___1862943134797034553_70019443694920'
+Started GET "/" for 127.0.0.1 at 2017-10-29 14:05:59 -0700
+Processing by MessageController#new as HTML
+  Rendering message/new.html.erb within layouts/application
+  Rendered message/new.html.erb within layouts/application (23.1ms)
+Completed 500 Internal Server Error in 40ms
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"message"}, missing required keys: [:id]):
+    1: <%= form_with scope: :message, url: message_path, local: true do |form| %>
+    2:   <p>
+    3:     <%= form.label :message %><br>
+    4:     <%= form.text_field :text %>
+  
+app/views/message/new.html.erb:1:in `_app_views_message_new_html_erb___1862943134797034553_70019481782800'
+Started GET "/" for 127.0.0.1 at 2017-10-29 14:07:56 -0700
+Processing by MessageController#new as HTML
+  Rendering message/new.html.erb within layouts/application
+  Rendered message/new.html.erb within layouts/application (48.4ms)
+Completed 500 Internal Server Error in 100ms
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"messages"}, missing required keys: [:id]):
+    1: <%= form_with scope: :message, url: message_path, local: true do |form| %>
+    2:   <p>
+    3:     <%= form.label :message %><br>
+    4:     <%= form.text_field :text %>
+  
+app/views/message/new.html.erb:1:in `_app_views_message_new_html_erb___1862943134797034553_22164820'
+Started GET "/" for 127.0.0.1 at 2017-10-29 14:08:05 -0700
+Processing by MessageController#new as HTML
+  Rendering message/new.html.erb within layouts/application
+  Rendered message/new.html.erb within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 35ms
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"messages"}, missing required keys: [:id]):
+    1: <%= form_with scope: :message, url: message_path, local: true do |form| %>
+    2:   <p>
+    3:     <%= form.label :message %><br>
+    4:     <%= form.text_field :text %>
+  
+app/views/message/new.html.erb:1:in `_app_views_message_new_html_erb___1862943134797034553_26106720'
+Started GET "/" for 127.0.0.1 at 2017-10-29 14:08:13 -0700
+Processing by MessageController#new as HTML
+  Rendering message/new.html.erb within layouts/application
+  Rendered message/new.html.erb within layouts/application (16.6ms)
+Completed 500 Internal Server Error in 38ms
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"messages"}, missing required keys: [:id]):
+    1: <%= form_with scope: :message, url: message_path, local: true do |form| %>
+    2:   <p>
+    3:     <%= form.label :message %><br>
+    4:     <%= form.text_field :text %>
+  
+app/views/message/new.html.erb:1:in `_app_views_message_new_html_erb___1862943134797034553_29607620'
+Started GET "/" for 127.0.0.1 at 2017-10-29 14:08:32 -0700
+Processing by MessageController#new as HTML
+  Rendering message/new.html.erb within layouts/application
+  Rendered message/new.html.erb within layouts/application (15.8ms)
+Completed 500 Internal Server Error in 38ms
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"messages"}, missing required keys: [:id]):
+    1: <%= form_with scope: :message, url: message_path, local: true do |form| %>
+    2:   <p>
+    3:     <%= form.label :message %><br>
+    4:     <%= form.text_field :text %>
+  
+app/views/message/new.html.erb:1:in `_app_views_message_new_html_erb___1862943134797034553_70019482170320'
+Started GET "/" for 127.0.0.1 at 2017-10-29 14:08:50 -0700
+Processing by MessageController#new as HTML
+  Rendering message/new.html.erb within layouts/application
+  Rendered message/new.html.erb within layouts/application (257.3ms)
+Completed 200 OK in 3008ms (Views: 3000.0ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (48.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (12.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMessages (20171029211310)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "messages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "text" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (3.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171029211310"]]
+  [1m[35m (19.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (7.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-10-29 21:19:42.217789"], ["updated_at", "2017-10-29 21:19:42.217789"]]
+  [1m[35m (15.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2017-10-29 14:28:17 -0700
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MessageController#new as HTML
+  Rendering message/new.html.erb within layouts/application
+  Rendered message/new.html.erb within layouts/application (119.1ms)
+Completed 200 OK in 1717ms (Views: 1627.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-10-29 14:28:26 -0700
+  
+ActionController::RoutingError (uninitialized constant MessagesController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/messages" for 127.0.0.1 at 2017-10-29 14:34:43 -0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant MessagesController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-10-29 14:34:47 -0700
+Processing by MessageController#new as HTML
+  Rendering message/new.html.erb within layouts/application
+  Rendered message/new.html.erb within layouts/application (79.3ms)
+Completed 200 OK in 1062ms (Views: 1059.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-10-29 14:34:53 -0700
+  
+ActionController::RoutingError (uninitialized constant MessagesController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-10-29 14:37:51 -0700
+Processing by MessageController#new as HTML
+  Rendering message/new.html.erb within layouts/application
+  Rendered message/new.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 288ms (Views: 275.2ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-10-29 14:38:07 -0700
+  
+ActionController::RoutingError (uninitialized constant MessagesController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-10-29 14:40:35 -0700
+Processing by MessageController#new as HTML
+  Rendering message/new.html.erb within layouts/application
+  Rendered message/new.html.erb within layouts/application (13.2ms)
+Completed 500 Internal Server Error in 40ms
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"message"}, missing required keys: [:id]):
+    1: <%= form_with scope: :message, url: message_path, local: true do |form| %>
+    2:   <p>
+    3:     <%= form.label :message %><br>
+    4:     <%= form.text_field :text %>
+  
+app/views/message/new.html.erb:1:in `_app_views_message_new_html_erb___1820715163105024887_70087727909360'
+Started GET "/" for 127.0.0.1 at 2017-10-29 14:41:37 -0700
+Processing by MessageController#new as HTML
+  Rendering message/new.html.erb within layouts/application
+  Rendered message/new.html.erb within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 79ms
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"messages"}, missing required keys: [:id]):
+    1: <%= form_with scope: :message, url: message_path, local: true do |form| %>
+    2:   <p>
+    3:     <%= form.label :message %><br>
+    4:     <%= form.text_field :text %>
+  
+app/views/message/new.html.erb:1:in `_app_views_message_new_html_erb___1820715163105024887_70087793678240'
+Started GET "/" for 127.0.0.1 at 2017-10-29 14:42:04 -0700
+Processing by MessageController#new as HTML
+  Rendering message/new.html.erb within layouts/application
+  Rendered message/new.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 193ms (Views: 189.5ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-10-29 14:42:10 -0700
+  
+ActionController::RoutingError (uninitialized constant MessagesController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-10-29 14:43:00 -0700
+  
+LoadError (Unable to autoload constant MessageController, expected /home/roberta/programming/rety/privnote/app/controllers/message_controller.rb to define it):
+  
+activesupport (5.1.4) lib/active_support/dependencies.rb:511:in `load_missing_constant'
+activesupport (5.1.4) lib/active_support/dependencies.rb:202:in `const_missing'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+activesupport (5.1.4) lib/active_support/dependencies.rb:582:in `get'
+activesupport (5.1.4) lib/active_support/dependencies.rb:613:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/parameters.rb:99:in `binary_params_for?'
+actionpack (5.1.4) lib/action_dispatch/http/parameters.rb:90:in `set_binary_encoding'
+actionpack (5.1.4) lib/action_dispatch/http/parameters.rb:67:in `path_parameters='
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-10-29 14:44:07 -0700
+  
+ActionController::RoutingError (uninitialized constant MessageController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-10-29 14:44:41 -0700
+  
+ActionController::RoutingError (uninitialized constant MessageController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-10-29 14:45:40 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant MessageController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-10-29 14:45:43 -0700
+  
+ActionController::RoutingError (uninitialized constant MessageController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-10-29 14:48:25 -0700
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/new.html.erb within layouts/application (61.2ms)
+Completed 200 OK in 678ms (Views: 673.6ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-10-29 14:48:42 -0700
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OPQ5756alAPGfcmH44X+7VyxmdfMO80jzBpU7D7kXkaZobueZF1D6fW6gZMqDIhk1NRTAn7s0TwDVsVccXkb4A==", "message"=>{"text"=>"rrr"}, "commit"=>"Save Message"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (14.9ms)[0m  [1m[32mINSERT INTO "messages" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "rrr"], ["created_at", "2017-10-29 21:48:42.230711"], ["updated_at", "2017-10-29 21:48:42.230711"]]
+  [1m[35m (10.6ms)[0m  [1m[36mcommit transaction[0m
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 314ms (Views: 152.5ms | ActiveRecord: 55.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2017-10-29 15:00:52 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for MessagesController):
+  
+actionpack (5.1.4) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-10-29 15:01:01 -0700
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/new.html.erb within layouts/application (126.7ms)
+Completed 200 OK in 1164ms (Views: 1098.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-10-29 15:01:11 -0700
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5lQrG8pyNckA5tmr0PIOBI3QL5LTY3NPrQg/lGpcmg5HAalqMLXiIzMhkb8Ze3iNBbXlR2G0b1BiRK4kJcHfqA==", "message"=>{"text"=>"navreme sme"}, "commit"=>"Save Message"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (5.0ms)[0m  [1m[32mINSERT INTO "messages" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "navreme sme"], ["created_at", "2017-10-29 22:01:12.094358"], ["updated_at", "2017-10-29 22:01:12.094358"]]
+  [1m[35m (29.2ms)[0m  [1m[36mcommit transaction[0m
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 516ms (Views: 182.8ms | ActiveRecord: 63.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-29 15:02:02 -0700
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/new.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 218ms (Views: 211.6ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-10-29 15:02:31 -0700
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"of7dHP6THyd3io8fzqdyRYLbNH2kl+XT4OEVuFM38lsAq19tBFTIzURNxwsHLgTMCr7+qBZA+cwvrYQIHKq3/Q==", "message"=>{"text"=>"mrazia ruby"}, "commit"=>"Save Message"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (16.6ms)[0m  [1m[32mINSERT INTO "messages" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "mrazia ruby"], ["created_at", "2017-10-29 22:02:31.962135"], ["updated_at", "2017-10-29 22:02:31.962135"]]
+  [1m[35m (41.8ms)[0m  [1m[36mcommit transaction[0m
+  Rendering messages/url.html.erb within layouts/application
+  Rendered messages/url.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 475ms (Views: 211.0ms | ActiveRecord: 83.7ms)
+
+
+Started GET "/messages/3" for 127.0.0.1 at 2017-10-29 15:02:42 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMessage Load (8.8ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 341ms (Views: 225.5ms | ActiveRecord: 8.8ms)
+
+

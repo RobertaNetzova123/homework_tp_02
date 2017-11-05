@@ -1,8 +1,9 @@
 <%= form_with scope: :message, url: messages_path, local: true do |form| %>
   <p>
-    <%= form.label :message %><br>
-    <%= form.text_field :text %>
+    <%= form.label :Message %><br>
+    <%= form.text_area :content %>
   </p>
+ 
   <p>
     <%= form.submit %>
   </p>

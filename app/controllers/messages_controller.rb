@@ -1,23 +1,55 @@
+require 'json'
 class MessagesController < ApplicationController
 	def show
-   	 	@message = Message.find(params[:id])
+    		@message = Message.find(params[:id])
   	end
-	
-	def new
-	end
-	
-	def create
-		@message = Message.new(message_params)
-	 	@message.save
-	 	render :url
-	end
-	 
-	def url
-		
-	end
-	private
-	def message_params
-	    params.require(:message).permit(:text)
-	end
-	
+
+  	def new
+    		@message = Message.new
+  	end
+
+  	def create
+		if request.content_type =~ /xml/
+      message_hash = Hash.from_xml(request.body.read)
+
+      params[:message] = {"content" => message_hash["message"]}
+
+      @message = Message.create({text: params[:message]})
+
+      url = '<?xml version = "1.0" encoding = "UTF-8" standalone ="yes"?>' + 
+            "<url>" + 
+              messages_url + '/' + @message.id.to_s + 
+            "</url>"
+
+      render :xml => url
+    else
+      respond_to do |f|
+          f.json {
+       			
+
+            @message = Message.create({text: params[:message]})
+
+            url = {"url" => messages_url + "/" + @message.id.to_s}
+
+            render :json => url.to_json
+          }
+
+          f.html {
+            @message = Message.create(parameters)
+
+            render :get
+          }
+      end
+end
+
+  	end
+ 
+  	def get
+    
+  	end
+
+private
+  	def parameters
+    		params.require(:message).permit(:content)
+  	end
 end
